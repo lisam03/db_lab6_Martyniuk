@@ -10,10 +10,10 @@ BEGIN
 END;
 $$;
 
-SELECT * FROM races;
-
 -- Виклик процедури
 CALL new_gp(20033, 'New Grand Prix');
+
+SELECT * FROM races;
 
 DELETE FROM races
 WHERE race_id = 20033;
